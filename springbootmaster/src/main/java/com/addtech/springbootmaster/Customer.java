@@ -8,7 +8,7 @@ public class Customer {
     private final Long id;
     private final String name;
 
-    @JsonIgnore
+  @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private final String password;
 
     Customer(Long id, String name, String password) {
