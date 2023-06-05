@@ -1,5 +1,6 @@
 package com.addtech.springbootmaster;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +32,7 @@ public class CustomerControllerV2 {
     }
 
     @PostMapping("/")
-    public void createNewCustomer(@RequestBody Customer customer){
+    public void createNewCustomer(@RequestBody @Valid  Customer customer){
         System.out.println("POST Request, new customer is created: "+customer);
     }
 
