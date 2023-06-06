@@ -1,0 +1,5 @@
+In this exception handler package we have three classes with distnict purpose
+1. ApiException: This is the class the client will see as a final response
+2. ApiRequestException:  This is what we are going to throw from the code
+3. ApiExceptionHandler: It's an Aspect Oriented Programming  (AOP) pattern where we are handling more than one exception (multiple exceptions within a single class)
+                     It uses @ControllerAdvice
